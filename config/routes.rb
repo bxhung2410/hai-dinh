@@ -8,4 +8,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "render#index"
+
+  # Defines the route for the category index ("/category")
+  resources :category, only: [:index, :show]
 end
